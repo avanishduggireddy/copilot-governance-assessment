@@ -1,0 +1,1 @@
+# Structured Copilot validation
