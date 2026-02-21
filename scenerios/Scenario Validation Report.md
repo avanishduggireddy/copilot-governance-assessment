@@ -20,7 +20,7 @@ Context: The UserListComponent subscribes to a UserService observable without un
 
 | Component | Details |
 |---|---|
-| Prompt Used | """Refactor this Angular component to prevent memory leaks. Use RxJS best practices for subscription management.""" |
+| Prompt Used | "Refactor this Angular component to prevent memory leaks. Use RxJS best practices for subscription management." |
 | Copilot Output | Suggested implementing `ngOnDestroy` and calling `.unsubscribe()` on a `Subscription` object. |
 | Critique | ⚠️ Suboptimal <br>" While functional, this is legacy pattern. It relies on manual cleanup which is error-prone if new subscriptions are added later." |
 | Manual Correction | Refactored to use the `async` pipe in the template where possible, or `takeUntilDestroyed()` (Angular 16+) for automatic cleanup. |
@@ -33,7 +33,7 @@ Context: The mapUserDTO function assumes nested properties exist.
 
 | Component | Details |
 |---|---|
-| Prompt Used | """Fix the null reference error in mapUserDTO. Ensure safe navigation for nested objects.""" |
+| Prompt Used | "Fix the null reference error in mapUserDTO. Ensure safe navigation for nested objects." |
 | Copilot Output | Added optional chaining (?.) but returned undefined silently. |
 | Critique | ❌ Flawed Logic <br>" Silently failing on missing data masks upstream API issues. In a financial/enterprise context, data integrity errors must be logged or thrown." |
 | Manual Correction | Added explicit validation checks. If critical data is missing, log a warning to the monitoring service and return a default safe state or throw a controlled error. |
@@ -46,7 +46,7 @@ Context: A large table re-renders all rows on any state change.
 
 | Component | Details |
 |---|---|
-| Prompt Used | """Optimize this *ngFor loop for performance. Consider change detection strategies.""" |
+| Prompt Used | "Optimize this *ngFor loop for performance. Consider change detection strategies." |
 | Copilot Output | Suggested adding a trackBy function. |
 | Critique | ✅ Correct but Incomplete <br> trackBy" was implemented correctly, but Copilot did not suggest changing the ChangeDetectionStrategy to "OnPush. |
 | Manual Correction | Added changeDetection: ChangeDetectionStrategy.OnPush to the component decorator. Verified immutability of input data. |
@@ -60,7 +60,7 @@ Context: Generating Jasmine/Karma tests for authentication logic.
 
 | Component | Details |
 |---|---|
-| Prompt Used | """Generate unit tests for AuthService. Cover success, failure, and token expiration scenarios.""" |
+| Prompt Used | "Generate unit tests for AuthService. Cover success, failure, and token expiration scenarios." |
 | Copilot Output | Generated 5 test cases. |
 | Critique | ❌ Hallucination Detected <br> Copilot invented a method refreshTokenIfNeeded() that does not exist in the service. It also mocked HttpClient incorrectly (missing HttpTestingController). |
 | Manual Correction | Removed non-existent method tests. Corrected HTTP mocking to use HttpTestingController for strict request verification. Added a test for HTTP 500 errors. |
