@@ -160,7 +160,7 @@ To prevent knowledge rot, we actively remove or consolidate outdated patterns.
 | Role | Responsibility | Count |
 |---|---|---|
 | AI Governance Lead | Overall strategy, policy enforcement. | 1 |
-| Domain Champions | Validate prompts in their specialty (FE, BE, Sec). | 10-15 |
+| Domain Champions | Validate prompts in their specialty (Frontend (FE), Backend (BE), and Security (Sec)). | 10-15 |
 | Security Liaison | Approve High Risk patterns. | 2 |
 | Community | Submit patterns, provide feedback, report issues. | 500+ |
 
