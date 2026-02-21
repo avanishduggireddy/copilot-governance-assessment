@@ -1,4 +1,4 @@
-GitHub Copilot Adoption Strategy: Scaling Velocity with Governance
+# GitHub Copilot Adoption Strategy: Scaling Velocity with Governance
 To: Engineering Leadership
 From: Avanish Duggireddy, AI Governance Lead
 Date: [Submission Date]
