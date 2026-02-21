@@ -91,8 +91,6 @@ Knowledge entries follow a lifecycle similar to software releases.
   Community      Champion       Published        Quarterly            Model Update
   Submission     Validation     to Registry      Review               or Risk Found
 
-Stage Descriptions
-
 ### Stage Descriptions
 
 - **Draft:** Submitted via GitHub Issue or pull request; unverified.
