@@ -32,3 +32,10 @@ START: Copilot Suggestion Generated
         +--- Tests Verified? ---> [ACCEPT] 🟢
   
 END: Code Ready for Merge
+
+| Action | Condition | Example |
+|---|---|---|
+| ACCEPT | "Boilerplate, standard patterns, verified logic." | Getter/Setter methods, standard DTO mappings. |
+| REFINE | Logic is correct but pattern is outdated or insecure. | Copilot uses any instead of Interface; uses eval(). |
+| REJECT | "Hallucinated methods, security risks, IP violations." | Copilot invents a library function; exposes API key. |
+
